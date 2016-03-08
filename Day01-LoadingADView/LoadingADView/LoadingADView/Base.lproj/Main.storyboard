@@ -5,7 +5,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <scenes>
-        <!--Item 2-->
+        <!--油-->
         <scene sceneID="n1h-CJ-TiX">
             <objects>
                 <viewController id="01o-i6-Quc" sceneMemberID="viewController">
@@ -13,18 +13,18 @@
                         <viewControllerLayoutGuide type="top" id="w0i-Ke-Vpl"/>
                         <viewControllerLayoutGuide type="bottom" id="4FL-vB-u0J"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="3hQ-wW-nqv">
+                    <view key="view" alpha="0.34999999999999998" contentMode="scaleToFill" id="3hQ-wW-nqv">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="0.25212823275862067" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="ofz-WT-L0A"/>
+                    <tabBarItem key="tabBarItem" title="油" id="ofz-WT-L0A"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JEY-21-nNd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="69" y="382"/>
         </scene>
-        <!--Item 1-->
+        <!--加-->
         <scene sceneID="Hg9-Ov-APv">
             <objects>
                 <viewController id="tAm-eG-CwC" sceneMemberID="viewController">
@@ -32,12 +32,12 @@
                         <viewControllerLayoutGuide type="top" id="3KT-eF-j9L"/>
                         <viewControllerLayoutGuide type="bottom" id="rkd-AJ-MTQ"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="46j-1P-ovR">
+                    <view key="view" alpha="0.34999999999999998" contentMode="scaleToFill" id="46j-1P-ovR">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" red="1" green="0.20352909482758622" blue="0.10770474137931033" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="Y98-Gn-ZBw"/>
+                    <tabBarItem key="tabBarItem" title="加" id="Y98-Gn-ZBw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lbY-te-nF1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

@@ -28,7 +28,7 @@ class ADViewController: UIViewController {
             default:
                 placeholderImageName = "iphone6s"
             }
-            backImageView.sd_setImageWithURL(NSURL(string: imageURL!), placeholderImage: UIImage(named: placeholderImageName!), options: SDWebImageOptions.RefreshCached) { (image, error, _, _) -> Void in
+            backImageView.sd_setImageWithURL(NSURL(string: imageURL!), placeholderImage: UIImage(named: placeholderImageName!)) { (image, error, _, _) -> Void in
                 if error != nil {
                     //加载广告失败
                     print("加载广告失败")
@@ -60,6 +60,7 @@ class ADViewController: UIViewController {
         super.viewDidLoad()
         
         view.addSubview(backImageView)
+        UIApplication.sharedApplication().setStatusBarHidden(true, withAnimation: UIStatusBarAnimation.None)
     }
 
     
