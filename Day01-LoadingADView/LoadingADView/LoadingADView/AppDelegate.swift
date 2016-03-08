@@ -30,8 +30,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
     
     func addNotification() {
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMainTabbarControllerSuccess:", name: ADImageLoadSuccess, object: nil)
-        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMainTabbarControllerFale", name: ADImageLoadFail, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMainTabBarControllerSuccess:", name: ADImageLoadSuccess, object: nil)
+        NSNotificationCenter.defaultCenter().addObserver(self, selector: "showMainTabBarControllerFale", name: ADImageLoadFail, object: nil)
         NSNotificationCenter.defaultCenter().addObserver(self, selector: "shoMainTabBarController", name: GuideViewControllerDidFinish, object: nil)
     }
     
@@ -41,14 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let tabbar = sb.instantiateViewControllerWithIdentifier("mainIdentifier")
         window?.rootViewController = tabbar
     }
-    func showMainTabbarControllerSuccess(noti: NSNotification) {
+    func showMainTabBarControllerSuccess(noti: NSNotification) {
         let adImage = noti.object as! UIImage
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let tabbar = sb.instantiateViewControllerWithIdentifier("mainIdentifier") as! MainTabBarViewController
         tabbar.adImage = adImage
         window?.rootViewController = tabbar
     }
-    func showMainTabbarControllerFale() {
+    func showMainTabBarControllerFale() {
         let sb = UIStoryboard(name: "Main", bundle: nil)
         let tabbar = sb.instantiateViewControllerWithIdentifier("mainIdentifier")
         window?.rootViewController = tabbar
