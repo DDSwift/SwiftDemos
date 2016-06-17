@@ -11,7 +11,7 @@ import UIKit
 private let iPhone35 = "iphone35"
 private let iPhone40 = "iphone40"
 private let iPhone47 = "iphone47"
-private let iPhone55 = "iphone57"
+private let iPhone55 = "iphone55"
 
 class GuideViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
     
